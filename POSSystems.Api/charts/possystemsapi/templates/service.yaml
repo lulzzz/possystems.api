@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "possystemsapi.fullname" . }}
+  labels:
+    app: {{ template "possystemsapi.name" . }}
+    chart: {{ template "possystemsapi.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "possystemsapi.name" . }}
+    release: {{ .Release.Name }}

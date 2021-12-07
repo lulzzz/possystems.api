@@ -1,0 +1,5 @@
+Add supplier_id in sales_deatail database int field
+Add back in transaction database float field
+Add signature_required in product category database bit field with default 0
+Add authcode in transaction database nvarchar(100) field
+Add acqrefdata in transaction database nvarchar(100) field

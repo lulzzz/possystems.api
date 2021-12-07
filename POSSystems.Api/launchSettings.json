@@ -1,0 +1,8 @@
+"RC2HostingDemo": {
+  "commandName": "Project",
+  "launchBrowser": true,
+  "launchUrl": "http://localhost:60000/api/values",
+  "environmentVariables": {
+    "ASPNETCORE_ENVIRONMENT": "Development"
+  }
+}

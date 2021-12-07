@@ -1,0 +1,34 @@
+USE [POSSystemsDBV2]
+GO
+
+truncate table batch_file;
+truncate table price_catalog;
+
+truncate table eligible_product;
+
+truncate table [transaction];
+
+truncate table sales_detail;
+truncate table sales_return;
+
+truncate table purchase_detail;
+truncate table purchase_return;
+
+truncate table purchase_master;
+truncate table sales_master;
+
+truncate table product;
+truncate table product_category;
+truncate table measurement_unit;
+truncate table manufacturer;
+truncate table customer;
+truncate table pricerange;
+truncate table pos_terminal;
+
+--truncate table source;
+--truncate table supplier;
+
+
+
+
+

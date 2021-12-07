@@ -1,0 +1,93 @@
+<table class="table table-hover" style="width: 295px; text-align: center;">
+    <tr>
+        <td>
+            <h2>{CompanyName}</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>{CompanyAddress} <abbr title="Phone">P:</abbr> {CompanyPhone} <br /> Date: {Date} <br /> Payment Type
+            #:{PaymentType} <br /> Receipt #: {Receipt} <br /> <img src="{ImgUrl}"></td>
+    </tr>
+</table>
+<table class="table table-hover" style="width: 275px;">
+    <thead>
+        <tr>
+            <th style="border-style: 2; border-width: 2px; text-align: left; padding: 2px; margin: 2px"
+                class="auto-style2">Product</th>
+            <th class="auto-style4" style="padding: 2px; margin: 2px; text-align: right">#</th>
+            <th class="text-center" style="padding: 2px; margin: 2px; text-align: right">Price</th>
+            <th class="auto-style3" style="padding: 2px; margin: 2px; text-align: right">Total</th>
+        </tr>
+    </thead>
+    <tbody> #POSITEM[<tr>
+            <td class="auto-style2"
+                style="border-style: 2; border-width: 2px; text-align: left; padding: 2px; margin: 2px; font-size: 12px">
+                <em>{ProductName}</em></h4>
+            </td>
+            <td class="auto-style4" style="padding: 2px; margin: 2px; text-align: right; font-size: 12px">{Quantity}
+            </td>
+            <td class="col-md-1 text-center" style="padding: 2px; margin: 2px; text-align: right; font-size: 12px">
+                {ProductPrice}</td>
+            <td class="auto-style3" style="padding: 2px; margin: 2px; text-align: right; font-size: 12px">{TotalPrice}
+            </td>
+        </tr> ]POSITEM# <tr>
+            <td style="border-style: 2; border-width: 2px; text-align: left; padding: 2px; margin: 2px"
+                class="auto-style2"></td>
+            <td class="auto-style4" style="padding: 2px; margin: 2px; text-align: right"></td>
+            <td class="text-right" style="padding: 2px; margin: 2px; text-align: right">
+                <p>Subtotal:</p>
+                <p>Tax:</p>
+            </td>
+            <td class="auto-style3" style="padding: 2px; margin: 2px; text-align: right">
+                <p>{Subtotal}</p>
+                <p>{Tax}</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-style: 2; border-width: 2px; text-align: left; padding: 2px; margin: 2px"
+                class="auto-style2"></td>
+            <td class="auto-style4" style="padding: 2px; margin: 2px; text-align: right"></td>
+            <td class="text-right" style="padding: 2px; margin: 2px; text-align: right">
+                <p>Total:</p>
+            </td>
+            <td class="auto-style3" style="padding: 2px; margin: 2px; text-align: right">
+                <p>{Total}</p>
+            </td>
+        </tr> #CASH[ <tr>
+            <td style="border-style: 2; border-width: 2px; text-align: left; padding: 2px; margin: 2px"
+                class="auto-style2"></td>
+            <td class="text-right" style="padding: 2px; margin: 2px; text-align: right" colspan="2">{PaymentTypeC}:</td>
+            <td class="auto-style3" style="padding: 2px; margin: 2px; text-align: right">{Cash}</td>
+        </tr> ]CASH# <tr>
+            <td style="border-style: 2; border-width: 2px; text-align: left; padding: 2px; margin: 2px"
+                class="auto-style2"></td>
+            <td class="text-right" style="padding: 2px; margin: 2px; text-align: right" colspan="2">Cash Change:</td>
+            <td class="auto-style3" style="padding: 2px; margin: 2px; text-align: right">{CashChange}</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-hover" style="width: 295px; text-align: center;">
+    <tr>
+        <td>
+            <h4>(Temporary Return Policy)</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>Due To Health Concerns Regarding</td>
+    </tr>
+    <tr>
+        <td>COVID-19,Refunds and Exchanges Will</td>
+    </tr>
+    <tr>
+        <td>not be accepted at this time.</td>
+    </tr>
+    <tr>
+        <td>Thank you and Stay Safe.</td>
+    </tr>
+    <tr>
+        <td>THANK YOU FOR SHOPPING AT</td>
+    </tr>
+    <tr>
+        <td>LIFEFIRST PHARMACY</td>
+    </tr>
+</table>

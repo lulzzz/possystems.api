@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  possystems.api:
+    image: ${DOCKER_REGISTRY-}possystemsapi
+    build:
+      context: .
+      dockerfile: POSSystems.Api/Dockerfile
