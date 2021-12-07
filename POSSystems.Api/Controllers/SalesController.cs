@@ -499,29 +499,6 @@ namespace POSSystems.Web.Controllers
                 LoyaltyPointEarned = _customer?.LoyaltyPointEarned.ToString()
             };
 
-            //invoiceDTO.InvoiceItemList.Add(new InvoiceItemDTO
-            //{
-            //    SalesPrice = selectedRx.RealPrice.ToString(),
-            //    Quantity = selectedRx.DispensingQuantity.ToString(),
-            //    ProductName = selectedRx.PrescribedDrug.ToString(),
-            //    TotalPrice = selectedRx.Copay.ToString(),
-            //    ItemTotalDiscount = "0",
-            //    OverriddenPrice = selectedRx.OverriddenPrice.ToString(),
-            //    RefPrescriptionId = selectedRx.RxNo
-            //});
-
-            //invoiceDTO.InvoiceItemList.Add(new InvoiceItemDTO
-            //{
-            //    ProductId = item.ProductId,
-            //    ProductDetailsId = item.ProductId,
-            //    ProductName = item.ProductName,
-            //    SalesPrice = item.SalesPrice.ToString(),
-            //    Quantity = selectedItem.Quantity.ToString(),
-            //    TotalPrice = (selectedItem.Quantity * item.SalesPrice).ToString(),
-            //    ItemTotalDiscount = selectedItem.TotalItemDiscount.ToString(),
-            //    OverriddenPrice = selectedItem.OverriddenPrice.ToString()
-            //});
-
             return invoiceDTO;
         }
 
