@@ -16,7 +16,7 @@
     <Version>2.9.4</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Authors>Saleh Ahmed Panna</Authors>
-    <Company>DAA</Company>
+    <Company>POSSystems</Company>
     <Product>POSSystems</Product>
     <AssemblyName>POSSystems.Web</AssemblyName>
     <UserSecretsId>ac4d885e-0a7d-4624-b79f-7182c317a250</UserSecretsId>

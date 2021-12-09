@@ -30,28 +30,24 @@ namespace POSSystems.Web.Controllers
             _printingInfo = printingInfo?.Value;
         }
 
-        [AllowAnonymous]
+        //[AllowAnonymous]
         public IActionResult Index()
         {
-            ViewData["ApiUrl"] = _jwtIssuerOptions.Audience.TrimEnd('/');
-            ViewData["WCPScript"] = WebClientPrint.CreateScript(Url.Action("ProcessRequest", "WebClientPrintAPI", null, Url.ActionContext.HttpContext.Request.Scheme),
-                Url.Action("PrintReceipt", "Common", new CreatePrintingInvoiceDto(), Url.ActionContext.HttpContext.Request.Scheme), Url.ActionContext.HttpContext.Session.Id);
+            //ViewData["ApiUrl"] = _jwtIssuerOptions.Audience.TrimEnd('/');
+            //ViewData["WCPScript"] = WebClientPrint.CreateScript(Url.Action("ProcessRequest", "WebClientPrintAPI", null, Url.ActionContext.HttpContext.Request.Scheme),
+            //    Url.Action("PrintReceipt", "Common", new CreatePrintingInvoiceDto(), Url.ActionContext.HttpContext.Request.Scheme), Url.ActionContext.HttpContext.Session.Id);
 
-            ViewData["Version"] = _applicationData.Version;
+            //ViewData["Version"] = _applicationData.Version;
 
-            ViewData["CompanyName"] = _printingInfo.CompanyName;
-            ViewData["CompanyAddress"] = _printingInfo.CompanyAddress;
-            ViewData["CompanyAddress2"] = _printingInfo.CompanyAddress2;
-            ViewData["CompanyPhone"] = _printingInfo.CompanyPhone;
-            ViewData["CompanyEmail"] = _printingInfo.CompanyEmail;
-            ViewData["CompanyWebsite"] = _printingInfo.CompanyWebsite;
+            //ViewData["CompanyName"] = _printingInfo.CompanyName;
+            //ViewData["CompanyAddress"] = _printingInfo.CompanyAddress;
+            //ViewData["CompanyAddress2"] = _printingInfo.CompanyAddress2;
+            //ViewData["CompanyPhone"] = _printingInfo.CompanyPhone;
+            //ViewData["CompanyEmail"] = _printingInfo.CompanyEmail;
+            //ViewData["CompanyWebsite"] = _printingInfo.CompanyWebsite;
 
-            return View("Dashboard");
-        }
-
-        public IActionResult Error()
-        {
-            return View();
+            //return View("Dashboard");
+            return new JsonResult("");
         }
     }
 }

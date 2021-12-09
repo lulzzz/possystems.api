@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3.0'
 
 services:
   possystems.api:
@@ -6,3 +6,13 @@ services:
     build:
       context: .
       dockerfile: POSSystems.Api/Dockerfile
+    ports:
+      - "8080:8080"
+    command: ["./wait-for-it.sh", "db:1433", "-t", "30000", "-s", "--", "dotnet", "POSSystems.Web.dll", "--urls", "http://*:8080"]
+  db:
+    image: ${DOCKER_REGISTRY-}possystemsdata
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1433:1433"

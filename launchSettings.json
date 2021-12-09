@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "composeLaunchServiceName": "possystems.api",
+      "serviceActions": {
+        "db": "StartWithoutDebugging",
+        "possystems.api": "StartDebugging"
+      },
+      "composeLaunchAction": "None",
+      "commandVersion": "1.0"
+    }
+  }
+}
