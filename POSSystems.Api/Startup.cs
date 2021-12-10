@@ -80,7 +80,7 @@ namespace POSSystems.Web
                 options.AddPolicy(name: POSAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://localhost:8080").AllowAnyHeader().AllowAnyMethod();
+                                      builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
                                   });
             });
 

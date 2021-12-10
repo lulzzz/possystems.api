@@ -1,6 +1,15 @@
 version: '3.0'
 
 services:
+  possystems.web:
+    image: ${DOCKER_REGISTRY-}possystemsweb
+    build:
+      context: ../POSSystems.Web/
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on: 
+      - possystems.api
   possystems.api:
     image: ${DOCKER_REGISTRY-}possystemsapi
     build:
@@ -8,7 +17,7 @@ services:
       dockerfile: POSSystems.Api/Dockerfile
     ports:
       - "8080:8080"
-    command: ["./wait-for-it.sh", "db:1433", "-t", "30000", "-s", "--", "dotnet", "POSSystems.Web.dll", "--urls", "http://*:8080"]
+    command: ["./wait-for-it.sh", "db:1433", "-t", "3000", "-s", "--", "dotnet", "POSSystems.Web.dll", "--urls", "http://*:8080"]
   db:
     image: ${DOCKER_REGISTRY-}possystemsdata
     build:
