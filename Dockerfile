@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/mssql/server:2019-latest
 
 RUN mkdir /var/opt/mssql/backup
-COPY POSSystemsDBV2.bak /var/opt/mssql/backup/.
+COPY ["Sample Files/POSSystemsDBV2.bak", "/var/opt/mssql/backup/."]
 COPY entrypoint.sh .
 COPY run-initialization.sh .
 
